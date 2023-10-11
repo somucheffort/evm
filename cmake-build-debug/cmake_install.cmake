@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/leaki/CLionProjects/evm
+# Install script for directory: C:/Users/leaki/OneDrive/Рабочий стол/evm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/leaki/CLionProjects/evm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/leaki/OneDrive/Рабочий стол/evm/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

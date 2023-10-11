@@ -1,3 +1,3 @@
-C:/Users/leaki/CLionProjects/evm/cmake-build-debug/CMakeFiles/evm.dir
-C:/Users/leaki/CLionProjects/evm/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/leaki/CLionProjects/evm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/leaki/OneDrive/Рабочий стол/evm/cmake-build-debug/CMakeFiles/evm.dir
+C:/Users/leaki/OneDrive/Рабочий стол/evm/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/leaki/OneDrive/Рабочий стол/evm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
