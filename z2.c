@@ -1,15 +1,13 @@
-#include <iostream>
-using std::cout;
-using std::cin;
-using std::endl;
+#include <stdio.h>
+#include <locale.h>
 
 int main() {
     setlocale(0, "");
     float x, y;
-    cout << "Ââåäèòå x: ";
-    cin >> x;
-    cout << "Ââåäèòå y: ";
-    cin >> y;
+    printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ x: ");
+    scanf("%f", &x);
+    printf("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ y: ");
+    scanf("%f", &y);
 
     int triTopRight = (x >= 0) && (x <= 6) && (y <= (-1 * x + 6)) && (y >= 0);
     int triDownLeft = (x >= -6) && (x <= 0) && (y <= 0) && (y >= (-1 * x - 6));
@@ -22,10 +20,8 @@ int main() {
 
     int symDifSumCircles = (triSquareSum && !symDifCircles) || (!triSquareSum && symDifCircles);
 
-    if (symDifSumCircles) cout << "Òî÷êà âõîäèò";
-    else cout << "Òî÷êà íå âõîäèò";
 
-    cout << endl;
+    printf(symDifSumCircles ? "Ð¢Ð¾Ñ‡ÐºÐ° Ð²Ñ…Ð¾Ð´Ð¸Ñ‚.\n" : "Ð¢Ð¾Ñ‡ÐºÐ° Ð½Ðµ Ð²Ñ…Ð¾Ð´Ð¸Ñ‚.\n");
 
     return 0;
 }

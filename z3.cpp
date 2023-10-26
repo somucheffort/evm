@@ -4,30 +4,35 @@ using std::cin;
 using std::endl;
 
 int main() {
+    setlocale(0, "");
     float F, a, b, c, startX, endX, dX;
 
-    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ a:";
+    cout << "Ââåäèòå çíà÷åíèå a: ";
     cin >> a;
-    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ b:";
+    cout << "Ââåäèòå çíà÷åíèå b: ";
     cin >> b;
-    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ c:";
+    cout << "Ââåäèòå çíà÷åíèå c: ";
     cin >> c;
-    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ startX:";
+    cout << "Ââåäèòå çíà÷åíèå startX: ";
     cin >> startX;
-    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ endX:";
+    cout << "Ââåäèòå çíà÷åíèå endX: ";
     cin >> endX;
-    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ dX:";
+    cout << "Ââåäèòå çíà÷åíèå dX: ";
     cin >> dX;
 
     cout << endl << "x    | F    " << endl;
 
-    for (float x = startX; startX <= x && x <= endX; x += dX) {
+    for (float x = startX; x <= endX; x += dX) {
         if (x <= 0 && b != 0) {
             F = a * x * x * x + b * x * x;
         } else if (x > 0 && b == 0) {
             F = (x - a) / (x - c);
         } else {
             F = (x + 5) / (c * (x - 10));
+        }
+
+        if (!(int(a) & int(b) & int(c)) == 0) {
+            F = int(F);
         }
 
         cout << x << " | " << F << endl;

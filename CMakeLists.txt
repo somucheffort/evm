@@ -3,4 +3,4 @@ project(evm)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(evm main.cpp z3.cpp z2.cpp z1.cpp)
+add_executable(evm z9.cpp)
